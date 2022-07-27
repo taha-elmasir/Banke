@@ -1,6 +1,7 @@
 :root {
   --color-main: #1864ab;
   --color-secondary: #1c7ed6;
+  --color-heading: #444;
 }
 
 * {
@@ -24,6 +25,8 @@ body {
 }
 
 /* Reusable styles */
+
+/* btn */
 
 .btn {
   text-decoration: none;
@@ -50,24 +53,71 @@ body {
 .btn-secondary {
   color: #555;
   background-color: #fff;
-  margin-left: 1.2rem;
+  margin-left: 1.8rem;
 }
 
 .btn-secondary:hover {
   background-color: transparent;
 }
 
-/* Heading */
+/* Container */
 
-section {
+.container {
   max-width: 130rem;
+  padding: 0 6.4rem;
   margin: 0 auto;
-  padding: 9.6rem 3.2rem;
 }
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Icons */
+
+.how_icon {
+  color: var(--color-main);
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Heading */
 
 h1 {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.1;
-  color: #444;
+  color: var(--color-heading);
+}
+
+h2 {
+  font-size: 4.2rem;
+  color: var(--color-heading);
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  letter-spacing: -0.7px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  color: #555;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+
+.subheading {
+  font-size: 1.7rem;
+  color: var(--color-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }

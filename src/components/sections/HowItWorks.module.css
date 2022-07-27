@@ -1,0 +1,9 @@
+.section_how {
+  border-top: 1px solid #ddd;
+  padding: 9.6rem 0;
+}
+
+.section_how .box {
+  column-gap: 8rem;
+  row-gap: 9.6rem;
+}

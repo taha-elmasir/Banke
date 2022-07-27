@@ -1,5 +1,5 @@
 .featured_in {
-  padding: 4.8rem 3.2rem;
+  padding: 9.6rem 0;
 }
 
 .featured_in__title {
@@ -15,9 +15,10 @@
 .featured_in__img {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 6.2rem;
 }
+
 .featured_in__img img {
   height: 3.2rem;
   filter: brightness(0);

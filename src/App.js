@@ -1,7 +1,12 @@
-import Header from "./components/header/Header";
+import Layout from "./components/UI/Layout";
+import HowItWorks from "./components/sections/HowItWorks";
 
 const App = () => {
-  return <Header />;
+  return (
+    <Layout>
+      <HowItWorks />
+    </Layout>
+  );
 };
 
 export default App;
