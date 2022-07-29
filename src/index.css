@@ -29,6 +29,7 @@ body {
 /* btn */
 
 .btn {
+  cursor: pointer;
   text-decoration: none;
   display: inline-block;
   background-color: var(--color-main);
@@ -112,6 +113,12 @@ h3 {
   color: #555;
   line-height: 1.2;
   margin-bottom: 1.4rem;
+}
+
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .subheading {

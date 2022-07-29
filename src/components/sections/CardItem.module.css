@@ -1,0 +1,30 @@
+.feature {
+  padding: 1.2rem 2.4rem 2.4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 8px 16px 32px rgb(0, 0, 0, 0.05);
+  transition: all 0.4s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.feature:hover {
+  transform: translateY(-3%);
+}
+
+.feature img {
+  width: 100%;
+  max-height: 23rem;
+  height: 50%;
+}
+
+.feature_description {
+  font-family: "Work Sans", sans-serif;
+}
+
+.feature_btn {
+  margin: 1.2rem auto 0;
+}
