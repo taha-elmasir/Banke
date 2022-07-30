@@ -91,6 +91,17 @@ body {
   height: 4rem;
 }
 
+.footer-icon {
+  cursor: pointer;
+  fill: #fff;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.footer-icon:hover {
+  fill: var(--color-main);
+}
+
 /* Heading */
 
 h1 {
