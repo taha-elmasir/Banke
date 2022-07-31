@@ -2,11 +2,11 @@ import Nav from "./Nav";
 import MainSection from "./MainSection";
 import FeaturedIn from "./FeaturedIn";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
-      <Nav />
-      <MainSection />
+      <Nav onShowModal={props.onShowModal} />
+      <MainSection onShowModal={props.onShowModal} />
       <FeaturedIn />
     </header>
   );

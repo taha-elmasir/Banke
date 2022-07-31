@@ -4,7 +4,7 @@ import Header from "../header/Header";
 const Layout = (props) => {
   return (
     <Fragment>
-      <Header />
+      <Header onShowModal={props.onShowModal} />
       <main>{props.children}</main>
     </Fragment>
   );

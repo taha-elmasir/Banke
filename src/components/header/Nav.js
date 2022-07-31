@@ -1,6 +1,6 @@
 import styles from "./Nav.module.css";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>Logo</div>
@@ -15,7 +15,7 @@ const Nav = () => {
           <a href="#">Testimonials</a>
         </li>
         <li>
-          <a href="#" className="btn btn-nav">
+          <a className="btn btn-nav" onClick={props.onShowModal}>
             Sign up
           </a>
         </li>

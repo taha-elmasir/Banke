@@ -2,7 +2,7 @@ import styles from "./MainSection.module.css";
 
 import mainImg from "../../img/main-img.jpg";
 
-const MainSection = () => {
+const MainSection = (props) => {
   return (
     <section className={styles.main_section}>
       <div className={`container grid grid-2-col ${styles.content}`}>
@@ -14,7 +14,7 @@ const MainSection = () => {
             finibus quam aliquam.
           </p>
           <div>
-            <a href="#" className="btn btn-primary">
+            <a className="btn btn-primary" onClick={props.onShowModal}>
               Start Your Journey
             </a>
             <a href="#" className="btn btn-secondary">
