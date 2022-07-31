@@ -1,5 +1,8 @@
+import { useRef, useEffect } from "react";
+
 import CardItem from "./CardItem";
 import styles from "./Features.module.css";
+import { reveal } from "../../lib";
 
 // Images
 import fee from "../../img/features/fee.png";
@@ -7,8 +10,15 @@ import transfers from "../../img/features/instant transfers.png";
 import multicurrency from "../../img/features/multicurrency.png";
 
 const Features = () => {
+  const featureRef = useRef();
+  useEffect(() => reveal(featureRef), [featureRef]);
+
   return (
-    <section className={styles.features}>
+    <section
+      id="features-section"
+      className={`${styles.features} hidden`}
+      ref={featureRef}
+    >
       <div className="container">
         <p className="subheading"># Features</p>
         <h2>Everything you need in a modern bank and more</h2>

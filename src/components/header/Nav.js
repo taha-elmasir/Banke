@@ -1,18 +1,19 @@
 import styles from "./Nav.module.css";
+import { scroll } from "../../lib";
 
 const Nav = (props) => {
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${!props.sticky && styles.sticky}`}>
       <div className={styles.logo}>Logo</div>
-      <ul>
+      <ul className="nav-links" onClick={(e) => scroll(e)}>
         <li>
-          <a href="#">How it works</a>
+          <a href="#how-section">How it works</a>
         </li>
         <li>
-          <a href="#">Features</a>
+          <a href="#features-section">Features</a>
         </li>
         <li>
-          <a href="#">Testimonials</a>
+          <a href="#testimonials-section">Testimonials</a>
         </li>
         <li>
           <a className="btn btn-nav" onClick={props.onShowModal}>

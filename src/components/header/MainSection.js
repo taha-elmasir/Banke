@@ -1,10 +1,14 @@
 import styles from "./MainSection.module.css";
+import { scroll } from "../../lib";
 
+// Images
 import mainImg from "../../img/main-img.jpg";
 
 const MainSection = (props) => {
   return (
-    <section className={styles.main_section}>
+    <section
+      className={`${styles.main_section} ${!props.sticky && styles.sticky}`}
+    >
       <div className={`container grid grid-2-col ${styles.content}`}>
         <div className={styles.text}>
           <h1>Safer, faster. Change your life forever</h1>
@@ -17,7 +21,11 @@ const MainSection = (props) => {
             <a className="btn btn-primary" onClick={props.onShowModal}>
               Start Your Journey
             </a>
-            <a href="#" className="btn btn-secondary">
+            <a
+              href="#how-section"
+              className="btn btn-secondary"
+              onClick={(e) => scroll(e)}
+            >
               Learn More &rarr;
             </a>
           </div>

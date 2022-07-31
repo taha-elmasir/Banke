@@ -1,9 +1,7 @@
 import styles from "./Footer.module.css";
 
 // Icons
-import { Facebook } from "../../icons/Facebook";
-import { Twitter } from "../../icons/Twitter";
-import { Linkedin } from "../../icons/Linkedin";
+import { Facebook, Twitter, Linkedin } from "../../icons/FooterIcons";
 
 const Footer = () => {
   const date = new Date();

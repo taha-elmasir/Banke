@@ -103,6 +103,13 @@ body {
   fill: var(--color-main);
 }
 
+/* Related to the sections */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 /* Heading */
 
 h1 {

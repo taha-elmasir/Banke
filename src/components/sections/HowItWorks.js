@@ -1,18 +1,27 @@
+import { useRef, useEffect } from "react";
+
 import HowItWorksItem from "./HowItWorksItem";
 import styles from "./HowItWorks.module.css";
+import { reveal } from "../../lib";
 
 // Icons
-import { CashIcon } from "../../icons/CashIcon";
-import { UserIcon } from "../../icons/UserIcon";
-import { GrowthIcon } from "../../icons/GrowthIcon";
+import { CashIcon, GrowthIcon, UserIcon } from "../../icons/HowIcons";
+
 // Images
 import cash from "../../img/how it works/cash.png";
 import growth from "../../img//how it works/growth.png";
 import account from "../../img/how it works/account.png";
 
 const HowItWorks = () => {
+  const howRef = useRef();
+  useEffect(() => reveal(howRef), [howRef]);
+
   return (
-    <section className={styles.section_how}>
+    <section
+      id="how-section"
+      className={`${styles.section_how} hidden`}
+      ref={howRef}
+    >
       <div className="container">
         <p className="subheading"># How it Works</p>
         <h2>More than you would expect from a modern bank</h2>

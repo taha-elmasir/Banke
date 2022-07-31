@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -18,7 +18,7 @@
   padding: 5rem 6rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
-  z-index: 2;
+  z-index: 3;
   animation: slide-down 300ms ease-out forwards;
 }
 

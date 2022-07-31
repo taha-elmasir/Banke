@@ -1,8 +1,17 @@
+import { useEffect, useRef } from "react";
+
 import styles from "./Contact.module.css";
+import { reveal } from "../../lib";
 
 const Contact = () => {
+  const ContactRef = useRef();
+  useEffect(() => reveal(ContactRef), [ContactRef]);
   return (
-    <section className={styles.contact}>
+    <section
+      id="contact-section"
+      className={`${styles.contact} hidden`}
+      ref={ContactRef}
+    >
       <div className="container">
         <p className={styles.contact_title}>Contact Us</p>
         <form>

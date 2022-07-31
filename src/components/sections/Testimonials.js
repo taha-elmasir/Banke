@@ -1,5 +1,8 @@
+import { useEffect, useRef } from "react";
+
 import TestimonialItem from "./TestimonialItem";
 import styles from "./Testimonials.module.css";
+import { reveal } from "../../lib";
 
 // images
 import p1 from "../../img/testimonials/Dangelo Hahn.jpg";
@@ -8,8 +11,15 @@ import p3 from "../../img/testimonials/Ellsworth Vandervort.jpg";
 import p4 from "../../img/testimonials/Golden Raynor.jpg";
 
 const Testimonials = () => {
+  const testimonialRef = useRef();
+  useEffect(() => reveal(testimonialRef), [testimonialRef]);
+
   return (
-    <section className={styles.testimonials}>
+    <section
+      id="testimonials-section"
+      className={`${styles.testimonials} hidden`}
+      ref={testimonialRef}
+    >
       <div className="container">
         <p className="subheading"># Testimonials</p>
         <h2>What our clients say about us</h2>

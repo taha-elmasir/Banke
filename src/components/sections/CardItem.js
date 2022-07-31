@@ -1,4 +1,5 @@
 import styles from "./CardItem.module.css";
+import { scroll } from "../../lib";
 
 const CardItem = (props) => {
   return (
@@ -6,7 +7,11 @@ const CardItem = (props) => {
       <img src={props.img} alt={props.title} />
       <h4>{props.title}</h4>
       <p className={styles.feature_description}>{props.description}</p>
-      <a href="#" className={`btn ${styles.feature_btn}`}>
+      <a
+        href="#contact-section"
+        className={`btn ${styles.feature_btn}`}
+        onClick={(e) => scroll(e)}
+      >
         Learn More
       </a>
     </div>

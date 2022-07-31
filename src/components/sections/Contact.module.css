@@ -3,6 +3,7 @@
   border-top: 1px solid #ddd;
   background-image: url("../../img/contact-us/contact-us.png");
   background-color: #f1f3f5;
+  transition: all 1s;
 }
 
 .contact_title {
