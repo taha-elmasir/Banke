@@ -25,7 +25,7 @@ const HowItWorks = () => {
       <div className="container">
         <p className="subheading"># How it Works</p>
         <h2>More than you would expect from a modern bank</h2>
-        <div className={`grid grid-2-col grid-center-v ${styles.box}`}>
+        <div className={styles.box}>
           <HowItWorksItem
             title="Let us simplify your payments"
             description="Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque a leo aliquet, dapibus ligula ut, vestibulum felissque ."

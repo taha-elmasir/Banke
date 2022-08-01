@@ -9,3 +9,25 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 4.8rem;
 }
+
+/* Below 800px */
+
+@media (max-width: 50em) {
+  .testimonial_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 6.4rem;
+  }
+}
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .testimonials {
+    padding: 6.4rem 0;
+  }
+
+  .testimonial_container {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+}

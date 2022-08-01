@@ -46,3 +46,40 @@
   font-family: "Work Sans", sans-serif;
   font-size: 1.4rem;
 }
+
+/* Below 600px */
+
+@media (max-width: 37.5em) {
+  .footer_top {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+
+  .footer_top ul {
+    justify-content: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer_info {
+    display: block;
+  }
+
+  .footer_info p {
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* Below 420px */
+
+@media (max-width: 26.25em) {
+  .footer_top ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+  }
+}

@@ -4,7 +4,26 @@
   transition: all 1s;
 }
 
-.section_how .box {
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   column-gap: 8rem;
   row-gap: 9.6rem;
+}
+
+/* Below 600px */
+
+@media (max-width: 37.5em) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .section_how {
+    padding: 6.4rem 0;
+  }
 }

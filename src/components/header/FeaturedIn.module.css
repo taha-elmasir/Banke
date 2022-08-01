@@ -24,3 +24,42 @@
   filter: brightness(0);
   opacity: 0.5;
 }
+
+/* Below 900px */
+
+@media (max-width: 56.25em) {
+  .featured_in__img {
+    gap: 4.8rem;
+  }
+  .featured_in__img img {
+    height: 2.4rem;
+  }
+}
+
+/* Below 700px */
+
+@media (max-width: 44em) {
+  .featured_in__img {
+    gap: 3.2rem;
+  }
+
+  .featured_in__img img {
+    height: 2rem;
+  }
+}
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .featured_in {
+    padding: 6.4rem 0;
+  }
+
+  .featured_in__img {
+    gap: 2.4rem;
+  }
+
+  .featured_in__img img {
+    height: 1.3rem;
+  }
+}

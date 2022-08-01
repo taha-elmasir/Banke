@@ -9,3 +9,27 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem;
 }
+
+/* Below 900px */
+
+@media (max-width: 56.25em) {
+  .feature_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Below 600px */
+
+@media (max-width: 37.5em) {
+  .feature_cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .features {
+    padding: 6.4rem 0;
+  }
+}

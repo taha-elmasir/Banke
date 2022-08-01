@@ -29,3 +29,53 @@
   margin: 1.2rem auto 0;
   font-size: 1.6rem;
 }
+
+/* Below 900px */
+
+@media (max-width: 56.25em) {
+  .feature {
+    width: 90%;
+    gap: 1.8rem;
+  }
+
+  .feature:last-of-type {
+    grid-column: 1/-1;
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
+/* Below 700px */
+
+@media (max-width: 44em) {
+  .feature {
+    width: 100%;
+  }
+
+  .feature:last-of-type {
+    width: 50%;
+  }
+}
+
+/* Below 600px */
+
+@media (max-width: 37.5em) {
+  .feature:last-of-type {
+    grid-column: span 1;
+    width: 80%;
+  }
+
+  .feature {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .feature:last-of-type,
+  .feature {
+    width: 90%;
+  }
+}

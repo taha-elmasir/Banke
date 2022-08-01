@@ -58,3 +58,23 @@
   font-size: inherit;
   margin: 1.2rem auto 0;
 }
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .contact form {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 3.2rem;
+  }
+
+  .contact form button {
+    display: block;
+  }
+}
