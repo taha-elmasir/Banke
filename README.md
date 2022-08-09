@@ -1,0 +1,21 @@
+# Banke
+A landing page built with React for a fictional bank.
+
+This project was generated with Create React App.
+
+## Dependencies
+
+ "@testing-library/jest-dom": "^5.11.6",
+ "@testing-library/react": "^11.2.2",
+ "@testing-library/user-event": "^12.5.0",
+ "react": "^18.0.0",
+ "react-dom": "^18.0.0",
+ "react-scripts": "^5.0.1",
+ "web-vitals": "^0.2.4"
+
+## How to run the project
+
+1. git clone https://github.com/taha-elmasir/Banke.git
+2. cd Banke
+3. npm install
+4. npm start
