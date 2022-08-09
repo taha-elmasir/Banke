@@ -1,5 +1,5 @@
 # Banke
-A landing page built with React for a fictional bank.
+ A landing page built with React for a fictional bank.
 
 This project was generated with Create React App.
 
@@ -12,6 +12,10 @@ This project was generated with Create React App.
  "react-dom": "^18.0.0",
  "react-scripts": "^5.0.1",
  "web-vitals": "^0.2.4"
+ 
+ ## Build
+ 
+ Run `npm run build` to build the project. The build files will be stored in the `build/` directory.
 
 ## How to run the project
 
